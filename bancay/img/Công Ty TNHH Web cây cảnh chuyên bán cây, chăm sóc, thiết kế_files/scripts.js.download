@@ -1,0 +1,11 @@
+//(function($,root,undefined){$(function(){'use strict';$("#menu-mobile").mmenu({extensions:["position-right"]});$(".owl-1-items").owlCarousel({nav:false,loop:false,dots:true,items:1});$(".owl-2-items").owlCarousel({nav:false,loop:false,dots:true,margin:30,responsive:{0:{items:1},768:{items:2}}});$(".owl-3-items").owlCarousel({nav:false,loop:false,dots:true,margin:30,responsive:{0:{items:1},768:{items:2},1024:{items:3}}});$(".owl-4-items").owlCarousel({nav:true,navText:['<i class="fa fa-angle-left font30" aria-hidden="true"></i>','<i class="fa fa-angle-right font30" aria-hidden="true"></i>'],loop:false,dots:false,margin:30,responsive:{0:{items:1},450:{items:2},768:{items:3},1024:{items:4}}});$("#s-top").hide();var wh=$(window).height();var whtml=$(document).height();$(window).scroll(function(){if($(this).scrollTop()>whtml/10){$('#s-top').fadeIn();}else{$('#s-top').fadeOut();}});$('#s-top').click(function(){$('body,html').animate({scrollTop:0},800);return false;});});})(jQuery,this);
+
+(function($,root,undefined){$(function(){'use strict';$("#menu-mobile").mmenu({extensions:["position-right"]});$(".owl-1-items").owlCarousel({nav:false,loop:false,dots:true,items:1});$(".owl-2-items").owlCarousel({nav:false,loop:false,dots:true,margin:30,responsive:{0:{items:1},768:{items:2}}});$(".owl-3-items").owlCarousel({nav:false,loop:false,dots:true,margin:30,responsive:{0:{items:1},768:{items:2},1024:{items:3}}});$(".owl-4-items").owlCarousel({nav:true,navText:['<i class="fa fa-angle-left font30" aria-hidden="true"></i>','<i class="fa fa-angle-right font30" aria-hidden="true"></i>'],loop:false,dots:false,margin:30,responsive:{0:{items:1},450:{items:2},768:{items:3},1024:{items:4}}});$("#s-top").hide();var wh=$(window).height();var whtml=$(document).height();$(window).scroll(function(){if($(this).scrollTop()>whtml/10){$('#s-top').fadeIn();} else{$('#s-top').fadeOut();}});$('#s-top').click(function(){$('body,html').animate({scrollTop:0},800);return false;});$("#btn-add-cart").click(function(){$('body,html').animate({scrollTop:$("#dropdownMenu2").offset().top},800);return false;});});
+$("a.feedback").fancybox({
+    'titleShow'     : true,
+    'transitionIn'  : 'elastic',
+    'transitionOut' : 'elastic',
+    'easingIn'      : 'easeOutBack',
+    'easingOut'     : 'easeInBack'
+  });
+})(jQuery,this);
